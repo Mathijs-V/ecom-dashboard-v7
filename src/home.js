@@ -11,7 +11,7 @@ function Home() {
 
     useEffect(() => {
         setAppState({ loading: true });
-        const apiUrl = 'http://127.0.0.1:8000/api/';
+        const apiUrl = 'https://ecom-dashboard-3120cfa682eb.herokuapp.com/api/';
         fetch(apiUrl)
             .then((response) => response.json())
             .then((posts) => {
