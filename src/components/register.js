@@ -60,7 +60,7 @@ export default function Register() {  // Renamed from SignUp to Register
 		console.log(formData);
 
 		axiosInstance
-			.post(`user/create/`, {
+			.post(`user/register/`, {
 				email: formData.email,
 				user_name: formData.username,
 				password: formData.password,
