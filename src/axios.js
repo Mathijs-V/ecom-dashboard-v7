@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const baseURL = process.env.REACT_APP_API_URL;
+const baseURL = "https://ecom-dashboard-3120cfa682eb.herokuapp.com/api/";
 
 const axiosInstance = axios.create({
 	baseURL: baseURL,
