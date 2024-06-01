@@ -51,7 +51,6 @@ const Posts = (props) => {
                     {post.title.substr(0, 50)}...
                   </PostTitle>
                   <PostText>
-                    <Typography component="p" color="textPrimary"></Typography>
                     <Typography variant="body2" color="textSecondary">
                       {post.excerpt.substr(0, 60)}...
                     </Typography>
