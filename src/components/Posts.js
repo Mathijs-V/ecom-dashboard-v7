@@ -6,6 +6,7 @@ import CardMedia from '@mui/material/CardMedia';
 import Grid from '@mui/material/Grid';
 import Typography from '@mui/material/Typography';
 import Container from '@mui/material/Container';
+import { Link } from 'react-router-dom';
 
 const theme = createTheme();
 
@@ -33,6 +34,9 @@ const PostText = styled('div')(({ theme }) => ({
 
 const Posts = (props) => {
   const { posts } = props;
+
+  console.log(posts);
+
   if (!posts || posts.length === 0) return <p>Can not find any posts, sorry</p>;
   return (
     <ThemeProvider theme={theme}>
@@ -41,21 +45,23 @@ const Posts = (props) => {
           {posts.map((post) => (
             <Grid item key={post.id} xs={12} md={4}>
               <Card>
-                <CardHeaderStyled />
-                <CardMediaStyled
-                  image="https://source.unsplash.com/random"
-                  title="Image title"
-                />
-                <CardContent>
-                  <PostTitle gutterBottom variant="h6" component="h2">
-                    {post.title.substr(0, 50)}...
-                  </PostTitle>
-                  <PostText>
-                    <Typography variant="body2" color="textSecondary">
-                      {post.excerpt.substr(0, 60)}...
-                    </Typography>
-                  </PostText>
-                </CardContent>
+                <Link to={`/post/${post.slug}`} style={{ textDecoration: 'none', color: 'inherit' }}>
+                  <CardHeaderStyled />
+                  <CardMediaStyled
+                    image="https://source.unsplash.com/random"
+                    title="Image title"
+                  />
+                  <CardContent>
+                    <PostTitle gutterBottom variant="h6" component="h2">
+                      {post.title.substr(0, 50)}...
+                    </PostTitle>
+                    <PostText>
+                      <Typography variant="body2" color="textSecondary">
+                        {post.excerpt.substr(0, 60)}...
+                      </Typography>
+                    </PostText>
+                  </CardContent>
+                </Link>
               </Card>
             </Grid>
           ))}

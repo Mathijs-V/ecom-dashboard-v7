@@ -12,18 +12,23 @@ function Home() {
     });
 
     useEffect(() => {
-        axiosInstance.get('/')
-            .then((res) => {
-                const allPosts = res.data;
-                setAppState({ loading: false, posts: allPosts, error: null });
-            })
-            .catch((error) => {
-                if (error.response && error.response.status === 401) {
-                    setAppState({ loading: false, posts: null, error: 'You are not authorized to view this content.' });
-                } else {
-                    setAppState({ loading: false, posts: null, error: 'An error occurred while fetching data.' });
-                }
-            });
+        const accessToken = localStorage.getItem('access_token');
+        if (!accessToken) {
+            setAppState({ loading: false, posts: null, error: 'You are not authorized to view this content.' });
+        } else {
+            axiosInstance.get('/')
+                .then((res) => {
+                    const allPosts = res.data;
+                    setAppState({ loading: false, posts: allPosts, error: null });
+                })
+                .catch((error) => {
+                    if (error.response && error.response.status === 401) {
+                        setAppState({ loading: false, posts: null, error: 'You are not authorized to view this content.' });
+                    } else {
+                        setAppState({ loading: false, posts: null, error: 'An error occurred while fetching data.' });
+                    }
+                });
+        }
     }, [setAppState]);
 
     return (

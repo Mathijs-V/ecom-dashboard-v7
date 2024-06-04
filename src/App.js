@@ -6,6 +6,7 @@ import Home from './home';
 import Register from './components/register';
 import Login from './components/login';
 import Logout from './components/logout';
+import Single from './components/single';
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
           <Route path='/register' element={<Register />} />
           <Route path='/login' element={<Login />} />
           <Route path='/logout' element={<Logout />} />
+          <Route path='/post/:slug' element={<Single />} />
         </Routes>
       <Footer />
     </Router>
