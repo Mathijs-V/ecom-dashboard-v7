@@ -7,6 +7,7 @@ import Register from './components/register';
 import Login from './components/login';
 import Logout from './components/logout';
 import Single from './components/single';
+import Search from './components/Search';
 
 function App() {
   return (
@@ -17,7 +18,8 @@ function App() {
           <Route path='/register' element={<Register />} />
           <Route path='/login' element={<Login />} />
           <Route path='/logout' element={<Logout />} />
-          <Route path='/post/:slug' element={<Single />} />
+          <Route path='/blog/:slug' element={<Single />} />
+          <Route path='/search' element={<Search />} />
         </Routes>
       <Footer />
     </Router>

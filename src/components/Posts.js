@@ -45,7 +45,7 @@ const Posts = (props) => {
           {posts.map((post) => (
             <Grid item key={post.id} xs={12} md={4}>
               <Card>
-                <Link to={`/post/${post.slug}`} style={{ textDecoration: 'none', color: 'inherit' }}>
+                <Link to={`/blog/${post.slug}`} style={{ textDecoration: 'none', color: 'inherit' }}>
                   <CardHeaderStyled />
                   <CardMediaStyled
                     image="https://source.unsplash.com/random"

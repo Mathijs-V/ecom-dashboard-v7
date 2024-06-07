@@ -1,66 +1,122 @@
-import React from 'react';
+import React, { useState } from 'react';
 import AppBar from '@mui/material/AppBar';
 import Toolbar from '@mui/material/Toolbar';
 import Typography from '@mui/material/Typography';
 import CssBaseline from '@mui/material/CssBaseline';
-import { NavLink } from 'react-router-dom';
+import { styled } from '@mui/material/styles';
+import { NavLink, useNavigate } from 'react-router-dom';
 import Link from '@mui/material/Link';
 import Button from '@mui/material/Button';
-import { Box } from '@mui/material';
+import TextField from '@mui/material/TextField';
+import IconButton from '@mui/material/IconButton';
+import SearchIcon from '@mui/icons-material/Search';
+
+const PREFIX = 'Header';
+const classes = {
+  appBar: `${PREFIX}-appBar`,
+  link: `${PREFIX}-link`,
+  toolbarTitle: `${PREFIX}-toolbarTitle`,
+  searchInput: `${PREFIX}-searchInput`
+};
+
+const Root = styled('div')(({ theme }) => ({
+  [`& .${classes.appBar}`]: {
+    borderBottom: `1px solid ${theme.palette.divider}`,
+  },
+  [`& .${classes.link}`]: {
+    margin: theme.spacing(1, 1.5),
+  },
+  [`& .${classes.toolbarTitle}`]: {
+    flexGrow: 1,
+  },
+  [`& .${classes.searchInput}`]: {
+    marginRight: theme.spacing(2),
+    width: '30%',
+  },
+}));
 
 function Header() {
-	return (
-		<React.Fragment>
-			<CssBaseline />
-			<AppBar
-				position="static"
-				color="default"
-				elevation={0}
-				sx={{ borderBottom: (theme) => `1px solid ${theme.palette.divider}` }}
-			>
-				<Toolbar sx={{ flexWrap: 'wrap' }}>
-					<Typography variant="h6" color="inherit" noWrap sx={{ flexGrow: 1 }}>
-						<Link
-							component={NavLink}
-							to="/"
-							underline="none"
-							color="textPrimary"
-						>
-							Blog
-						</Link>
-					</Typography>
-					<nav>
-						<Link
-							color="textPrimary"
-							component={NavLink}
-							to="/register"
-							sx={{ my: 1, mx: 1.5 }}
-						>
-							Register
-						</Link>
-					</nav>
-					<Button
-						color="primary"
-						variant="outlined"
-						component={NavLink}
-						to="/login"
-						sx={{ my: 1, mx: 1.5 }}
-					>
-						Login
-					</Button>
-					<Button
-						color="primary"
-						variant="outlined"
-						component={NavLink}
-						to="/logout"
-						sx={{ my: 1, mx: 1.5 }}
-					>
-						Logout
-					</Button>
-				</Toolbar>
-			</AppBar>
-		</React.Fragment>
-	);
+  const navigate = useNavigate();
+  const [search, setSearch] = useState('');
+
+  const goSearch = () => {
+    navigate(`/search/?search=${search}`);
+  };
+
+  return (
+    <Root>
+      <CssBaseline />
+      <AppBar
+        position="static"
+        color="default"
+        elevation={0}
+        className={classes.appBar}
+      >
+        <Toolbar className={classes.toolbar}>
+          <Typography
+            variant="h6"
+            color="inherit"
+            noWrap
+            className={classes.toolbarTitle}
+          >
+            <Link
+              component={NavLink}
+              to="/"
+              underline="none"
+              color="textPrimary"
+            >
+              Blog
+            </Link>
+          </Typography>
+
+          <TextField
+            className={classes.searchInput}
+            variant="outlined"
+            size="small"
+            value={search}
+            onChange={(e) => setSearch(e.target.value)}
+            placeholder="Search..."
+            InputProps={{
+              endAdornment: (
+                <IconButton onClick={goSearch}>
+                  <SearchIcon />
+                </IconButton>
+              ),
+            }}
+          />
+
+          <nav>
+            <Link
+              color="textPrimary"
+              className={classes.link}
+              component={NavLink}
+              to="/register"
+            >
+              Register
+            </Link>
+          </nav>
+          <Button
+            color="primary"
+            variant="outlined"
+            className={classes.link}
+            component={NavLink}
+            to="/login"
+          >
+            Login
+          </Button>
+          <Button
+            color="primary"
+            variant="outlined"
+            className={classes.link}
+            component={NavLink}
+            to="/logout"
+          >
+            Logout
+          </Button>
+        </Toolbar>
+      </AppBar>
+    </Root>
+  );
 }
 
 export default Header;

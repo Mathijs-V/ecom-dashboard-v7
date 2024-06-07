@@ -27,7 +27,7 @@ export default function Post() {
   const [data, setData] = useState({ posts: [] });
 
   useEffect(() => {
-    axiosInstance.get(slug).then((res) => {
+    axiosInstance.get(`blog/${slug}/`).then((res) => {
       setData({ posts: res.data });
       console.log(res.data);
     });

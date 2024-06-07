@@ -16,7 +16,7 @@ function Home() {
         if (!accessToken) {
             setAppState({ loading: false, posts: null, error: 'You are not authorized to view this content.' });
         } else {
-            axiosInstance.get('/')
+            axiosInstance.get('blog/')
                 .then((res) => {
                     const allPosts = res.data;
                     setAppState({ loading: false, posts: allPosts, error: null });
