@@ -8,6 +8,11 @@ import Login from './components/login';
 import Logout from './components/logout';
 import Single from './components/single';
 import Search from './components/Search';
+//Admin imports
+import Admin from './Admin';
+import Create from './components/admin/create';
+import Edit from './components/admin/edit';
+import Delete from './components/admin/delete';
 
 function App() {
   return (
@@ -15,6 +20,10 @@ function App() {
       <Header />
         <Routes>
           <Route path="/" element={<Home />} />
+          <Route path='/admin' element={<Admin />} />
+          <Route path='/admin/create' element={<Create />} />
+          <Route path='/admin/edit/:id' element={<Edit />} />
+          <Route path='/admin/delete/:id' element={<Delete />} />
           <Route path='/register' element={<Register />} />
           <Route path='/login' element={<Login />} />
           <Route path='/logout' element={<Logout />} />
