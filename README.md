@@ -1,6 +1,8 @@
-# PRJ4 - E-Commerce-Dashboard
+# PRJ4 - E-Commerce Dashboard
 
-The E-Commerce-Dashboard is a website that helps users see where and when their business is doing well and when it's doing poorly. This is done by analyzing the data we receive via ... and process via ... and ... . We supply the user in detail about their sales... in order to assist them best for upcoming events/sales. Our goal for the website is to have a tool to make it simpler for our users to identify where they can improve and where they are already doing good... . 
+The E-Commerce Dashboard is a website that supports our customers in predicting what articles to restock and what to rather ignore. We used a variation of the prophet model, which is written in Python and produces high-quality forecasts.
+
+Prophet is a procedure for forecasting time series data based on an additive model where non-linear trends are fit with yearly, weekly, and daily seasonality, plus holiday effects. It works best with time series that have strong seasonal effects and several seasons of historical data. Prophet is robust to missing data and shifts in the trend and typically handles outliers well (https://facebook.github.io/prophet/).
 
 ## Table of contents:
 - [1 Analysis](/analysis)
@@ -34,8 +36,13 @@ The following programs can be used to run our application:
 - [IntelliJ](https://www.jetbrains.com/de-de/idea/): IntelliJ is an integrated development environment (IDE) primarily used for Java development but also supports various other programming languages.
 - [Visual Studio Code](https://code.visualstudio.com): Visual Studio Code, is a lightweight yet powerful source code editor developed by Microsoft, widely used for various programming languages and configurations.
 
+The following programming languages were used to create the project:
+- [Javascript](/google.de): The base of the project is written in Javascript. 
+- [Python](/google.de): The prophet model, as the heart-piece of our project is written in Python.
+- [HTML/CSS](/google.de): We used a little html and css for styling.
 
-# Getting Started with Create React App
+# How to run the project:
+## Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
