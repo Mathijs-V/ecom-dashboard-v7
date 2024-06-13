@@ -4,6 +4,14 @@ The E-Commerce Dashboard is a website that supports our customers in predicting 
 
 Prophet is a procedure for forecasting time series data based on an additive model where non-linear trends are fit with yearly, weekly, and daily seasonality, plus holiday effects. It works best with time series that have strong seasonal effects and several seasons of historical data. Prophet is robust to missing data and shifts in the trend and typically handles outliers well (https://facebook.github.io/prophet/).
 
+## Features
+- **Data Integration**: Collects and funnels data from various Sales channels including Shopify, Amazon, eBay and more. 
+- **Concise Analysis**: Offers insight into various metrics like ad spending, inventory, product sales and demographic data of customers.
+- **User configured Dashboard**: Offers a user-friendly dashboard to visualise sales-trends, product performance and advertisement-ROI (ROI = Return on marketing investment).
+- **Weather-Integration**: Uses weather-data to predict sales trends, especially important for weather-depending clothes like pyjamas.
+- **Dynamic Marketing Strategies**: Offers to have precise marketing campaigns on the base of customer locations and popular product regions.
+- **Inventory Management**: Helps with the optimization of inventory and purchasing decisions to maximise revenue and minimise mistakes.
+
 ## Table of contents:
 - [1 Analysis](/analysis)
   - [1.1 Data Dictionary](/analysis/DataDictionary.md)
