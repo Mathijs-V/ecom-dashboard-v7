@@ -35,16 +35,16 @@ A set of people who have similar interests, goals or concerns.
 [User story](/analysis/User%20Stories.md):
 An informal, general explanation of a software feature written from the perspective of the end user. Its purpose is to articulate how a software feature will provide value to the customer.
 
-## What we used:
+## Technologies
+- **Python**: Used for API requests, data processing, and backend development.
+- **PostgreSQL**: Database management for storing and retrieving data efficiently.
+- **HTML, CSS, JavaScript**: Frontend development for creating interactive dashboards and user interfaces.
+- **Next.js**: Framework for enhancing UI/UX design and building responsive web applications.
+- **Flask or Django**: Backend frameworks for handling server-side logic and routing.
 
 The following programs can be used to run our application:
 - [IntelliJ](https://www.jetbrains.com/de-de/idea/): IntelliJ is an integrated development environment (IDE) primarily used for Java development but also supports various other programming languages.
 - [Visual Studio Code](https://code.visualstudio.com): Visual Studio Code, is a lightweight yet powerful source code editor developed by Microsoft, widely used for various programming languages and configurations.
-
-The following programming languages were used to create the project:
-- [Javascript](/google.de): The base of the project is written in Javascript. 
-- [Python](/google.de): The prophet model, as the heart-piece of our project is written in Python.
-- [HTML/CSS](/google.de): We used a little html and css for styling.
 
 # How to run the project:
 ## Getting Started with Create React App
