@@ -1,6 +1,16 @@
-# PRJ4 - E-Commerce-Dashboard
+# PRJ4 - E-Commerce Dashboard
 
-The E-Commerce-Dashboard is a website that helps users see where and when their business is doing well and when it's doing poorly. This is done by analyzing the data we receive via ... and process via ... and ... . We supply the user in detail about their sales... in order to assist them best for upcoming events/sales. Our goal for the website is to have a tool to make it simpler for our users to identify where they can improve and where they are already doing good... . 
+The E-Commerce Dashboard is a website that supports our customers in predicting what articles to restock and what to rather ignore. We used a variation of the prophet model, which is written in Python and produces high-quality forecasts.
+
+[Prophet](/https://facebook.github.io/prophet/) is a procedure for forecasting time series data based on an additive model where non-linear trends are fit with yearly, weekly, and daily seasonality, plus holiday effects. It works best with time series that have strong seasonal effects and several seasons of historical data. Prophet is robust to missing data and shifts in the trend and typically handles outliers well.
+
+## Features
+- **Data Integration**: Collects and funnels data from various Sales channels including Shopify, Amazon, eBay and more. 
+- **Concise Analysis**: Offers insight into various metrics like ad spending, inventory, product sales and demographic data of customers.
+- **User configured Dashboard**: Offers a user-friendly dashboard to visualise sales-trends, product performance and advertisement-ROI (ROI = Return on marketing investment).
+- **Weather-Integration**: Uses weather-data to predict sales trends, especially important for weather-depending clothes like pyjamas.
+- **Dynamic Marketing Strategies**: Offers to have precise marketing campaigns on the base of customer locations and popular product regions.
+- **Inventory Management**: Helps with the optimization of inventory and purchasing decisions to maximise revenue and minimise mistakes.
 
 ## Table of contents:
 - [1 Analysis](/analysis)
@@ -8,11 +18,8 @@ The E-Commerce-Dashboard is a website that helps users see where and when their 
   - [1.2 User Stories](/analysis/User%20Stories.md)
   - [1.3 Work Breakdown Structure](/analysis/Work%20Breakdown%20Structure.md)
 - [2 Design](/design)
-  - [2.1 Wireframes](/design/wireframes)
-  - [2.2 Entity-Relationship-Model](/design/ERM)
-  - [2.2 Entity-Relationship-Diagram](/design/ERD)
+  - [2.1 Entity-Relationship-Diagram](/design/ERD)
 - [3 Implementation](/implementation/)
-  - [3.1 ](/implementation/)
   - [3.1 E-Commerce-Dashboard](/implementation/E-Commerce-Dashboard)
 - [4 Project Management](/project%20management)
   - [4.1 Retrospectives](/project%20management/Retrospectives)
@@ -28,14 +35,20 @@ A set of people who have similar interests, goals or concerns.
 [User story](/analysis/User%20Stories.md):
 An informal, general explanation of a software feature written from the perspective of the end user. Its purpose is to articulate how a software feature will provide value to the customer.
 
-## What we used:
+## Technologies
+- **React**: React (also known as React.js or ReactJS) is a free and open-source front-end JavaScript library for building user interfaces based on components.
+- **Python**: Used for API requests, data processing, and backend development.
+- **PostgreSQL**: Database management for storing and retrieving data efficiently.
+- **HTML, CSS, JavaScript**: Frontend development for creating interactive dashboards and user interfaces.
+- **Next.js**: Framework for enhancing UI/UX design and building responsive web applications.
+- **Flask or Django**: Backend frameworks for handling server-side logic and routing.
 
 The following programs can be used to run our application:
 - [IntelliJ](https://www.jetbrains.com/de-de/idea/): IntelliJ is an integrated development environment (IDE) primarily used for Java development but also supports various other programming languages.
 - [Visual Studio Code](https://code.visualstudio.com): Visual Studio Code, is a lightweight yet powerful source code editor developed by Microsoft, widely used for various programming languages and configurations.
 
-
-# Getting Started with Create React App
+# How to run the project:
+## Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
