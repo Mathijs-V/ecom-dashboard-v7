@@ -14,6 +14,7 @@ import Typography from '@mui/material/Typography';
 import Container from '@mui/material/Container';
 import { styled, createTheme, ThemeProvider } from '@mui/material/styles';
 
+
 const theme = createTheme();
 
 const PaperStyled = styled('div')(({ theme }) => ({
@@ -45,6 +46,8 @@ export default function Login() {
 	});
 
 	const [formData, updateFormData] = useState(initialFormData);
+	const [message, setMessage] = useState('');
+	const [isError, setIsError] = useState(false);
 
 	const handleChange = (e) => {
 		updateFormData({
@@ -69,9 +72,22 @@ export default function Login() {
 				console.log('Refresh Token:', localStorage.getItem('refresh_token'));
 				axiosInstance.defaults.headers['Authorization'] =
 					'JWT ' + localStorage.getItem('access_token');
+
+				setMessage('Login successful');
+				setIsError(false);
+				setTimeout(() => {
+					navigate('/login-landing');
+				}, 1000); // Redirect after 1 second
+			})
+			.catch((error) => {
+				setMessage('Login failed');
+				setIsError(true);
+				console.error(error);
+				/*
 				navigate('/');
 				console.log(res);
 				console.log(res.data);
+				 */
 			});
 	};
 

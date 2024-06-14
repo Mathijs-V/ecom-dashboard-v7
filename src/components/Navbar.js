@@ -46,17 +46,6 @@ function Navbar() {
                         </ListItemButton>
                         <Divider />
                     </List>
-                    <List>
-                        <ListItemButton component={NavLink} to="/register">
-                            <ListItemText secondary="Register" />
-                        </ListItemButton>
-                        <ListItemButton component={NavLink} to="/login">
-                            <ListItemText secondary="Login" />
-                        </ListItemButton>
-                        <ListItemButton component={NavLink} to="/logout">
-                            <ListItemText secondary="Logout" />
-                        </ListItemButton>
-                    </List>
                 </Box>
             </Drawer>
         </React.Fragment>
