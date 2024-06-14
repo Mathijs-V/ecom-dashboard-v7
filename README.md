@@ -36,6 +36,7 @@ A set of people who have similar interests, goals or concerns.
 An informal, general explanation of a software feature written from the perspective of the end user. Its purpose is to articulate how a software feature will provide value to the customer.
 
 ## Technologies
+- **React**: React (also known as React.js or ReactJS) is a free and open-source front-end JavaScript library for building user interfaces based on components.
 - **Python**: Used for API requests, data processing, and backend development.
 - **PostgreSQL**: Database management for storing and retrieving data efficiently.
 - **HTML, CSS, JavaScript**: Frontend development for creating interactive dashboards and user interfaces.
