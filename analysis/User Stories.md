@@ -19,3 +19,7 @@
 - *I want to be able to edit my account details.*
 
 - *I want to be able to view my products graphs.*
+
+- *As a user I want to be able to view sales of certain cities in the Netherlands on a map.*
+
+- As a user I want to be able to toggle dark mode on the website.*
