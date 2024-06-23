@@ -1,5 +1,5 @@
 # Feedback from Feedpulse
-Here we collected the feedback from feedpulse that we wrote down after our weekly calls with the lecturers.
+Here we collected the feedback from feedpulse that we collected after our calls with the lecturers.
 
 ## Checkpoint 7
 - **04-06-2024 - Daniel Schmidt**
