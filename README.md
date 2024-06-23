@@ -14,7 +14,7 @@ The E-Commerce Dashboard is a website that supports our customers in predicting 
 
 ## Table of contents:
 - [1 Analysis](/analysis)
-  - [1.1 Data Dictionary](/analysis/DataDictionary.md)
+  - [1.1 Data Dictionary](/analysis//Data%20Dictionary.md)
   - [1.2 User Stories](/analysis/User%20Stories.md)
   - [1.3 Work Breakdown Structure](/analysis/Work%20Breakdown%20Structure.md)
 - [2 Design](/design)
