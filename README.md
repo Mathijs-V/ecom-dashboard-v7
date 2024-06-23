@@ -17,13 +17,10 @@ The E-Commerce Dashboard is a website that supports our customers in predicting 
   - [1.1 Data Dictionary](/analysis//Data%20Dictionary.md)
   - [1.2 User Stories](/analysis/User%20Stories.md)
   - [1.3 Work Breakdown Structure](/analysis/Work%20Breakdown%20Structure.pdf)
-- [2 Design](/design)
-  - [2.1 Entity-Relationship-Diagram](/design/ERD)
-- [3 Implementation](/implementation/)
-  - [3.1 E-Commerce-Dashboard](/implementation/E-Commerce-Dashboard)
-- [4 Project Management](/project%20management)
-  - [4.1 Feedpulse](/project%20management/feedpulse.md)
-- [5 README](/README.md)
+- [2 Project Management](/project%20management)
+  - [2.1 Feedpulse](/project%20management/feedpulse.md)
+  - [2.2 Scrum Board](https://github.com/users/feestjebouwen01/projects/1/views/2)
+- [3 README](/README.md)
 
 ## Analysis:
 
