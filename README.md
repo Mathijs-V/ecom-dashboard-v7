@@ -35,11 +35,13 @@ An informal, general explanation of a software feature written from the perspect
 
 ## Technologies
 - **React**: React (also known as React.js or ReactJS) is a free and open-source front-end JavaScript library for building user interfaces based on components.
+- **MUI**: Material UI is a library used for styling the website.
 - **Python**: Used for API requests, data processing, and backend development.
 - **PostgreSQL**: Database management for storing and retrieving data efficiently.
 - **HTML, CSS, JavaScript**: Frontend development for creating interactive dashboards and user interfaces.
-- **Next.js**: Framework for enhancing UI/UX design and building responsive web applications.
-- **Flask or Django**: Backend frameworks for handling server-side logic and routing.
+- **Celery**: Used for handling task queue's for the backend.
+- **Redis**: Used for caching orders as well as a message broker for the task queue.
+- **Django REST**: Backend framework for handling server-side logic and routing.
 
 The following programs can be used to run our application:
 - [IntelliJ](https://www.jetbrains.com/de-de/idea/): IntelliJ is an integrated development environment (IDE) primarily used for Java development but also supports various other programming languages.
@@ -54,35 +56,8 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 In the project directory, you can run:
 
+### `cd blogapi`
 ### `npm start`
 
 Runs the app in the development mode.\
 Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
-
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
