@@ -22,7 +22,7 @@ The E-Commerce Dashboard is a website that supports our customers in predicting 
 - [3 Implementation](/implementation/)
   - [3.1 E-Commerce-Dashboard](/implementation/E-Commerce-Dashboard)
 - [4 Project Management](/project%20management)
-  - [4.1 Feedpulse](/project%20management/Feedpulse.md)
+  - [4.1 Feedpulse](/project%20management/feedpulse.md)
 - [5 README](/README.md)
 
 ## Analysis:
