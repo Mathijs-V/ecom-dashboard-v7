@@ -21,7 +21,7 @@ The E-Commerce Dashboard is a website that supports our customer in predicting t
   - [2.1 Feedpulse](/project%20management/feedpulse.md)
   - [2.2 Scrum Board](https://github.com/users/feestjebouwen01/projects/1/views/2)
 - [3 Implementation](/implementation)
-    - [3.1. Prophet Model](/prophet%20model)
+    - [3.1. Prophet Model](/implementation/prophet%20model)
 - [4 README](/README.md)
 
 ## Analysis:
